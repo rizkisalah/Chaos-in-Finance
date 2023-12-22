@@ -1,2 +1,4 @@
 # Chaos-in-Finance
-In this repository three pythone code files are fournished, the first one is an implementation of Wolf's Algorithm for the calculation of Lapunov exponent (you can adapt it depending on the form of  your time series). the second code creates
+In this repository three pythone code files are fournished, the first one is an implementation of Wolf's Algorithm for the calculation of Lapunov exponent (you can adapt it depending on the form of  your time series). The second code creates a neural network with 3 hidden layers and an output (The activation function is sigmoid, and we use the backward propagation method). The last code is an implementation of Kaashoek and Van Dijk's neural network wich calculates the Lyapunov exponent for your time series. ( You can modify M wich is the dimension of the sub-series defined in the algorithm, always depending on your problem). 
+
+To have an idea about the conception of Wolf's Algorithm and Kaashoek & Van Dijk Algorithm, read this article : http://www.numdam.org/item/JSFS_1994__135_3_45_0.pdf    (It's in French)
