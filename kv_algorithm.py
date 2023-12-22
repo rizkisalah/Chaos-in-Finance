@@ -1,5 +1,5 @@
-import test
-from kv_nn import *
+import wolf_test
+from kv_neuralnetwork import *
 from numpy import *
 from numpy import linalg as la
 M = 16
@@ -35,4 +35,4 @@ def lyap(serie,M,A,C):
   somme=somme/len(serie)
   return somme
 
-print("L'exposant de Lyapunov vaut : ",lyap(test.bdserie,M,A,C))
+print("L'exposant de Lyapunov vaut : ",lyap(wolf_test.bdserie,M,A,C))
