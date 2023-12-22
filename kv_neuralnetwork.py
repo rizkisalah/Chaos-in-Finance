@@ -3,7 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import SGD
-import test
+import wolf_test
 
 M = 16
 # Création du modèle
@@ -19,8 +19,8 @@ model.add(Dense(units=1, activation='sigmoid'))
 model.compile(optimizer=SGD(learning_rate=0.01), loss='binary_crossentropy', metrics=['accuracy'])
 
 # Données d'entraînement factices
-X_train = [test.bdserie[0:0+M]]
-y_train = [test.bdserie[M]]
+X_train = [wolf_test.bdserie[0:0+M]]
+y_train = [wolf_test.bdserie[M]]
 
 model.fit(X_train, y_train, epochs=10)
 
